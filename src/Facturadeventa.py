@@ -3,6 +3,7 @@ def imprimir_factura(producto, cantidad, precio):
     descuento = subtotal * 0.25
     subtotal_con_descuento = subtotal - descuento
     iva = subtotal_con_descuento * 0.19
+    total_a_pagar = subtotal_con_descuento + iva
 
 producto = input('Ingrese el nombre del producto: ')
 cantidad = int(input('Ingrese la cantidad del producto: '))
